@@ -1,0 +1,136 @@
+/**{
+  $primary: "#3371d6";
+  $primary-darker:"#204582";
+}*/
+
+body{
+  margin:0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 96%;
+  margin:5px;
+  padding:10px;
+}
+
+.container h1{
+  font-size: 30px;
+  color:green;
+}
+
+#hero{
+  background-image: linear-gradient(rgba(0, 0, 0,0.8),rgba(0,0,0,0.3)), url('img1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
+  color:#fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+  display: flex;}
+li {
+  font-weight: 700;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+  
+
+.content {
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 4rem;
+ }
+button {
+  font-size: 2rem;
+  background-color: #3371d6;
+  color: #fff;
+  border: none;
+  padding: .5rem 2rem;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+button:hover {
+  background-color:#204582;
+}
+
+
+
+/*for modal */
+.modal{
+  background-color: rgba(0, 0, 0,0.8);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top:0;
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in;
+}
+
+.modal_close-bar {
+  cursor:pointer;
+  display:flex;
+  justify-content: flex-end;
+  margin-right: -2rem;
+  margin-top: -1rem;
+}
+
+.modal h1{
+  font-size: 27px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal p{
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-hidden{
+  display:none;
+}
+
+.modal_contents{
+  width:90%;
+  background-color: #f4f4f4;
+  padding:2rem 3rem;
+}
+
+.modal_contents input[type=email]{
+  width:100%;
+  padding:0.5rem;
+  margin-bottom: 1em;
+}
+
+#submit{
+  width:100%;
+  padding:0.2rem;
+  background-color: #3371d6;
+  color:#fff;
+  border:none;
+  font-size: 25px;
+  transition: all 0.3s ease-in;
+}
+
+#submit:hover{
+  background-color: #033380;
+}
+  

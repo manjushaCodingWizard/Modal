@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Modal Project</title>
+</head>
+<body>
+  <section id="hero">
+    <div class="container">
+      <nav>
+        <h1>ManjushaCodingWizard</h1>
+        <ul class="list">
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </div>
+      <div class="content">
+        <p>Modal Demo Project</p>
+        <button id="show-modal">Learn More</button>
+      </div>
+  </section>
+
+  <div class="overlay overlay-hidden"></div>
+  <div class="modal modal-hidden">
+    <div class="modal_contents">
+      <div class="modal_close-bar">
+        <span>X</span>
+      </div>
+      <h1>ManjushaCodingWizard</h1>
+      <p>Hello, I am Manjusha. I am Front-End web Developer. Follow my Github profile ManjushaCodingWizard to get amazing codes.</p>
+      <p>Please Enter Your Email Address to Find Out More</p>
+      <form id="learn-more-form">
+        <input type="email" placeholder="Your Email">
+        <button id="submit">Submit</button>
+      </form>      
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
